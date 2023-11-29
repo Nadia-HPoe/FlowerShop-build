@@ -1,4 +1,5 @@
 import React from 'react';
+import { Icons } from '../../icons/Icons';
 import './navbar.scss';
 
 function Navbar() {
@@ -34,8 +35,13 @@ function Navbar() {
           </ul>
         </nav>
         <div className="header__button">
-          <button className="header__login">L</button>
-          <button className="header__card">C</button>
+          <button className="header__login">
+            <Icons name="login" color="black" size="20" />
+          </button>
+          <button className="header__card">
+            {' '}
+            <Icons name="cart" color="black" size="20" />
+          </button>
         </div>
       </div>
     </header>
