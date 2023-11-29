@@ -1,11 +1,10 @@
+@use '../../../assets/styles/var';
+
 .header {
   background-color: white;
 }
 
-.container {
-  max-width: 1440px;
-  width: 100%;
-}
+
 .header__wrapper {
   display: flex;
   justify-content: space-around;
@@ -18,10 +17,16 @@
   align-items: center;
   justify-content: space-between;
   width: 178px;
+  color: black;
+  text-decoration: none;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+span {
+  color: var.$color-orange;
 }
 
 .header__list {
@@ -40,6 +45,25 @@ ul {
   list-style-type: none;
 }
 
+.header__link {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s all;
+  &:hover,
+  &:active {
+    color: #ff8f52;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
 .header__button {
   height: 100%;
+  gap: 1rem;
+}
+
+.header__login,
+.header__cart {
+  background-color: transparent;
+  border: 0;
+  transition: 0.3s all;
+  cursor: pointer;
 }

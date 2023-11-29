@@ -7,7 +7,7 @@ function Navbar() {
     <header className="header">
       <div className="header__wrapper">
         <a href="/" className="header__logo">
-          Flower Shop
+          <span>Flower</span> Shop
         </a>
 
         <nav className="header__menu">
@@ -36,11 +36,11 @@ function Navbar() {
         </nav>
         <div className="header__button">
           <button className="header__login">
-            <Icons name="login" color="black" size="20" />
+            <Icons name="login" color="#FF8F52" size="30" />
           </button>
-          <button className="header__card">
+          <button className="header__cart">
             {' '}
-            <Icons name="cart" color="black" size="20" />
+            <Icons name="cart" color="#FF8F52" size="30" />
           </button>
         </div>
       </div>
