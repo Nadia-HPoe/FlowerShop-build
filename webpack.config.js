@@ -22,6 +22,9 @@ module.exports = {
   },
   resolve: {
     extensions: ['.jsx', '.js'],
+    alias: {
+      '@assets': path.resolve(__dirname, 'src/assets'),
+    },
   },
   resolveLoader: {
     modules: [
