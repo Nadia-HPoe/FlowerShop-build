@@ -1,32 +1,43 @@
 import React from 'react';
-import { Icons } from '../../components/icons/Icons';
+import { Post } from '../../components/layout/Article';
+import { Img1 } from '../../assets/images/fsh_artpic1.jpg';
+import { Img2 } from '../../assets/images/fsh_artpic2.jpg';
+import { Img3 } from '../../assets/images/fsh_artpic3.jpg';
+
+const articles = [
+  {
+    id: 1,
+    user: 'Emily',
+    img: { Img1 },
+    title: 'Best flowers for inside home',
+    text: 'With their elegant vibrancy and soft, romantic detail, flowers help a house to feel more lively and fresh.😊',
+  },
+  {
+    id: 2,
+    user: 'John Smith',
+    img: { Img2 },
+    title: '4 Reasons You Should Have Fresh Flowers At Home',
+    text: 'Fresh flowers can provide a soothing touch of natural beauty to your home, not only visually, but with the sweet fragrance of nature.',
+  },
+  {
+    id: 3,
+    user: 'HappySunny1995',
+    img: { Img3 },
+    title: 'Home Ecology of Flowers Study',
+    text: 'The Home Ecology of Flowers Study at Harvard uncovered three main findings: 1. Flowers feed compassion...',
+  },
+];
 
 function Posts() {
+  const posts = articles.map((item, index) => <Post key={index} {...item} />);
   return (
     <section className="posts">
-      <h4 className="posts__title">Latest Posts</h4>
-      <div className="posts__card">
-        <div className="posts__header">
-          <img className="posts__header-icon" alt="icon" />
-          <p className="posts__header_name">Emily</p>
-          <p className="posts__header_date">2022/22/8</p>
-        </div>
-        <img className="posts__wallpaper" alt="post_wallpaper" />
-        <h6 className="posts__subtitle">Best flowers for inside home</h6>
-        <p className="posts__text">
-          With their elegant vibrancy and soft, romantic detail, flowers help a
-          house to feel more lively and fresh. 😊
-        </p>
-        <div className="posts__footer">
-          <p>
-            <Icons name="like" color="#838383" size="15" />
-          </p>
-          <p>
-            <Icons name="eye" color="#838383" size="15" />
-          </p>
-          <a>Read more</a>
-        </div>
+      <div className="posts__title">
+        <hr className="posts__line" />
+        <h4 className="posts__title-item">Latest Posts</h4>
+        <hr className="posts__line" />
       </div>
+      <div className="posts__card">{posts}</div>
     </section>
   );
 }

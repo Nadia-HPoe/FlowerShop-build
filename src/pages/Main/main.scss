@@ -21,6 +21,13 @@ p {
 hr {
   margin: 0;
 }
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+///////////////////Block1 - Welcome-Page//////////////////
 .welcome__wrapper {
   display: flex;
   justify-content: center;
@@ -77,18 +84,16 @@ hr {
   max-width: 192px;
 }
 
-.img-fluid {
-  width: 100%;
-  height: auto;
-}
-
-.bestsellers__title {
+///////////////////Block2 - Bestsellers-Page//////////////////
+.bestsellers__title,
+.posts__title {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.bestsellers__subtitle {
+.bestsellers__subtitle,
+.posts__title-item {
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
@@ -97,7 +102,8 @@ hr {
   font-weight: 400;
 }
 
-.bestsellers__line {
+.bestsellers__line,
+.posts__line {
   width: 165px;
   size: 10px;
   color: var.$color-light-grey;
@@ -154,4 +160,33 @@ hr {
   &:active {
     text-shadow: 0px 4px 4px rgba(83, 83, 83, 0.25);
   }
+}
+///////////////////Block1 - Posts-Page//////////////////
+.posts__wrapper {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 5px;
+  width: 377px;
+  height: 478px;
+}
+
+.posts__card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: 1fr;
+  grid-gap: 2.8rem;
+  justify-content: center;
+  padding: 6rem 7rem;
+}
+
+.posts__header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.posts__footer {
+  display: flex;
+  justify-content: space-around;
 }

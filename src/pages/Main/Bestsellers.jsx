@@ -1,6 +1,6 @@
 import React from 'react';
-import { flowers } from '../../components/flowers';
-import { FlowerCard } from '../../components/Flower';
+import { flowers } from '../../components/layout/flowers';
+import { FlowerCard } from '../../components/layout/Flower';
 
 function Bestsellers() {
   const flowerList = flowers.map((item) => (

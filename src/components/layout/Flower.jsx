@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icons } from '../components/icons/Icons';
+import { Icons } from '../icons/Icons';
 
 function FlowerCard(props) {
   return (
