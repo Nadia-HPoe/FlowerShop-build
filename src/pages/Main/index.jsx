@@ -3,6 +3,7 @@ import { Welcome } from './Welcome';
 import './main.scss';
 import { Bestsellers } from './Bestsellers';
 import { Posts } from './Posts';
+import { Comments } from './Comments';
 
 function Home() {
   return (
@@ -10,9 +11,7 @@ function Home() {
       <Welcome />
       <Bestsellers />
       <Posts />
-      <section className="comments">
-        <h4>Comments</h4>
-      </section>
+      <Comments />
     </main>
   );
 }

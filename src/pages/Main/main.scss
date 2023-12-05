@@ -2,6 +2,7 @@
 
 main {
   background-color: #f2f2f2;
+  font-weight: 400;
 }
 h1,
 h2,
@@ -44,13 +45,11 @@ hr {
   width: 557px;
   color: #121212;
   font-size: 60px;
-  font-weight: 400;
 }
 
 .welcome__text {
   color: var.$color-grey;
   font-size: 20px;
-  font-weight: 400;
 }
 
 .welcome__button {
@@ -63,7 +62,6 @@ hr {
   cursor: pointer;
   transition: 0.3s all;
   font-size: 18px;
-  font-weight: 400;
   &:hover,
   &:active {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -86,24 +84,26 @@ hr {
 
 ///////////////////Block2 - Bestsellers-Page//////////////////
 .bestsellers__title,
-.posts__title {
+.posts__title,
+.comment__title {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .bestsellers__subtitle,
-.posts__title-item {
+.posts__title-item,
+.comment__title-item {
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
   color: black;
   font-size: 32px;
-  font-weight: 400;
 }
 
 .bestsellers__line,
-.posts__line {
+.posts__line,
+.comment__line {
   width: 165px;
   size: 10px;
   color: var.$color-light-grey;
@@ -137,7 +137,6 @@ hr {
   padding-left: 1rem;
   color: #000;
   font-size: 22px;
-  font-weight: 400;
 }
 
 .flower__bottom {
@@ -145,7 +144,6 @@ hr {
   justify-content: space-between;
   padding: 2.3rem 1rem 0 1rem;
   font-size: 18px;
-  font-weight: 400;
 }
 .flower__price {
   color: var.$color-grey;
@@ -161,7 +159,7 @@ hr {
     text-shadow: 0px 4px 4px rgba(83, 83, 83, 0.25);
   }
 }
-///////////////////Block1 - Posts-Page//////////////////
+///////////////////Block3 - Posts-Page//////////////////
 .posts__wrapper {
   background-color: white;
   display: flex;
@@ -174,7 +172,7 @@ hr {
 
 .posts__card {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-template-rows: 1fr;
   grid-gap: 2.8rem;
   justify-content: center;
@@ -183,10 +181,105 @@ hr {
 
 .posts__header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem 0 1rem;
+}
+
+.posts__header-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.posts__header-icon {
+  width: 40px;
+  padding-right: 0.4rem;
+}
+
+.posts__header_name {
+  color: black;
+  font-size: 16px;
+}
+.posts__header_date,
+.posts__text {
+  font-size: 16px;
+  color: var.$color-grey;
+}
+.posts__subtitle {
+  color: black;
+  font-size: 20px;
+  padding: 0 1rem 0 1rem;
+}
+
+.posts__text {
+  padding-left: 1rem;
 }
 
 .posts__footer {
   display: flex;
+  justify-content: space-between;
+  padding: 0 1rem 0 1rem;
+}
+.posts__footer-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.posts__footer-link {
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s all;
+  &:hover,
+  &:active {
+    color: var.$color-grey;
+  }
+}
+.posts__like,
+.posts__view {
+  display: flex;
+  align-items: center;
+  color: var.$color-grey;
+  font-size: 12px;
+}
+
+//////////////////Block4 - Comment-Page//////////////////
+
+.comment__card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 2.8rem;
+  justify-content: center;
+  padding: 6rem 7rem;
+}
+
+.comment__wrapper {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  width: 382px;
+  height: 294px;
+}
+
+.comment__user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.comment__user-icon {
+  width: 58px;
+  padding-right: 0.4rem;
+}
+.comment__text {
+  font-size: 20px;
+  color: var.$color-grey;
+}
+.comment__user-name {
+  font-size: 22px;
+  font-weight: 500;
 }
