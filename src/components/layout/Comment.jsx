@@ -1,4 +1,5 @@
 import React from 'react';
+import { Icons } from '../icons/Icons';
 
 function Comment(props) {
   return (
@@ -8,7 +9,13 @@ function Comment(props) {
         <p className="comment__user-name">{props.user}</p>
       </div>
       <p className="comment__text">{props.comment}</p>
-      <div className="comment__rate"></div>
+      <div className="comment__rate">
+        <Icons name="star" color="#FF8F52" size="35" />
+        <Icons name="star" color="#FF8F52" size="35" />
+        <Icons name="star" color="#FF8F52" size="35" />
+        <Icons name="star" color="#FF8F52" size="35" />
+        <Icons name="star" color="#D9D9D9" size="35" />
+      </div>
     </div>
   );
 }

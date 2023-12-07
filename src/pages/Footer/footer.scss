@@ -1,4 +1,56 @@
+@use '../../assets/styles/var';
+
 footer {
   background-color: #454545;
-  max-height: 340px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__info-title {
+  font-size: 32px;
+  font-weight: 500;
+}
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 7rem;
+  padding: 3.4rem 7rem;
+}
+
+.footer__nav-title,
+.footer__contact-title {
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+}
+.footer__info-text,
+.footer__link {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.footer__info-text {
+  height: 178px;
+  width: 379px;
+}
+
+.footer__link {
+  transition: 0.3s all;
+  &:hover,
+  &:active {
+    color: var.$color-orange;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.footer__info,
+.footer__nav,
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
