@@ -17,12 +17,10 @@ function Post(props) {
       <div className="posts__footer">
         <div className="posts__footer-icons">
           <p className="posts__like">
-            <Icons name="like" color="#838383" size="15" />
-            999
+            <Icons name="like" color="#838383" size="15" />0
           </p>
           <p className="posts__view">
-            <Icons name="eye" color="#838383" size="15" />
-            999
+            <Icons name="eye" color="#838383" size="15" />0
           </p>
         </div>
         <a href="" className="posts__footer-link">

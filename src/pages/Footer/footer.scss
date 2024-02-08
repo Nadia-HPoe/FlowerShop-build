@@ -12,10 +12,15 @@ footer {
   font-weight: 500;
 }
 .footer__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 7rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
   padding: 3.4rem 7rem;
+  gap: 7rem;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 1fr 1fr;
+  // grid-gap: 7rem;
+  // padding: 3.4rem 7rem;
 }
 
 .footer__nav-title,
