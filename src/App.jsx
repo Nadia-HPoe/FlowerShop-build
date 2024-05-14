@@ -1,15 +1,53 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from 'react-router-dom';
 import { Navbar } from './components/layout/Navbar';
-import { Footer } from './pages/Footer';
 import { Home } from './pages/Main';
+import { Shop } from './pages/Shop';
+import { LoginForm } from './pages/Login';
+import { RegisterForm } from './pages/Register';
 import './assets/styles/global.scss';
+import { Posts } from './pages/Main/Posts';
 
 function App() {
+  const pathList = [
+    '/',
+    '/shop',
+    '/about',
+    '/blog',
+    '/cart',
+    '/login',
+    '/register',
+  ];
   return (
-    <div>
-      <Navbar />
-      <Home />
-      <Footer />
+    <Router>
+      <InnerApp pathList={pathList} />
+    </Router>
+  );
+}
+
+function InnerApp({ pathList }) {
+  const location = useLocation();
+  const pathname = location.pathname;
+
+  return (
+    <div className="App">
+      <div className="app-container">
+        {pathList.includes(pathname) ? <Navbar /> : null}
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/blog" element={<Posts />} />
+            <Route path="/shop" element={<Shop />} />
+            <Route path="/login" element={<LoginForm />} />
+            <Route path="/register" element={<RegisterForm />} />
+          </Routes>
+        </main>
+      </div>
     </div>
   );
 }

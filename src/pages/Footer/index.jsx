@@ -69,17 +69,19 @@ function Footer() {
         </div>
         <div className="footer__contact">
           <h6 className="footer__contact-title">Contacts</h6>
-          <p>
+          <p className="footer__contact-item">
             <Icons name="location" color="#838383" size="15" />
-            26985 Brighton Lane, Lake Forest, CA
+            <a href="https://maps.app.goo.gl/YXpE3RxsJ8oPMYLRA">
+              26985 Brighton Lane, Lake Forest, CA
+            </a>
           </p>
-          <p>
+          <p className="footer__contact-item">
             <Icons name="mail" color="#838383" size="15" />
-            support@Flowers.com
+            <a href="mailto: support@Flowers.com">support@Flowers.com</a>
           </p>
-          <p>
+          <p className="footer__contact-item">
             <Icons name="phone" color="#838383" size="15" />
-            +1 236 5489
+            <a href="tel:+12365489">+1 236 5489</a>
           </p>
         </div>
       </div>

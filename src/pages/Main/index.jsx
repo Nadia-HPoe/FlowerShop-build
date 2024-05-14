@@ -4,16 +4,16 @@ import './main.scss';
 import { Bestsellers } from './Bestsellers';
 import { Posts } from './Posts';
 import { Comments } from './Comments';
-import { LoginForm } from '../Login';
+import { Footer } from '../Footer';
 
 function Home() {
   return (
     <main className="homepage">
-      <LoginForm />
       <Welcome />
       <Bestsellers />
       <Posts />
       <Comments />
+      <Footer />
     </main>
   );
 }
