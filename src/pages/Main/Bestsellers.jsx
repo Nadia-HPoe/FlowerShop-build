@@ -3,7 +3,10 @@ import { flowers } from '../../components/layout/flowers';
 import { FlowerCard } from '../../components/layout/Flower';
 
 function Bestsellers() {
-  const flowerList = flowers.map((item) => (
+  const bestsellerFlowers = flowers.filter(
+    (flower) => flower.bestseller === true,
+  );
+  const flowerList = bestsellerFlowers.map((item) => (
     <FlowerCard
       key={item.id}
       name={item.name}

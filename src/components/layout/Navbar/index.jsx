@@ -42,11 +42,11 @@ function Navbar() {
               <Icons name="login" color="#FF8F52" size="30" />
             </button>
           </NavLink>
-
-          <button className="header__cart">
-            {' '}
-            <Icons name="cart" color="#FF8F52" size="30" />
-          </button>
+          <NavLink to="/cart">
+            <button className="header__cart">
+              <Icons name="cart" color="#FF8F52" size="30" />
+            </button>
+          </NavLink>
         </div>
       </div>
     </header>

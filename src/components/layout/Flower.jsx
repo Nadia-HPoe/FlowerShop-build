@@ -9,7 +9,7 @@ function FlowerCard(props) {
       <div className="flower__bottom">
         <p className="flower__price">{props.price}$</p>
         <button className="flower__button">
-          <Icons name="cart" color="#FF8F52" size="15" />
+          <Icons className='shop-icon' name="cart" color="#FF8F52" size="15" />
           Add to cart
         </button>
       </div>

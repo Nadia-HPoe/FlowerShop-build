@@ -8,10 +8,12 @@ import {
 import { Navbar } from './components/layout/Navbar';
 import { Home } from './pages/Main';
 import { Shop } from './pages/Shop';
-import { LoginForm } from './pages/Login';
-import { RegisterForm } from './pages/Register';
+import { LoginForm } from './pages/User/Login';
+import { RegisterForm } from './pages/User/Register';
 import './assets/styles/global.scss';
 import { Posts } from './pages/Main/Posts';
+import { Cart } from './pages/Cart';
+import { UserPage } from './pages/User/Userpage';
 
 function App() {
   const pathList = [
@@ -22,6 +24,7 @@ function App() {
     '/cart',
     '/login',
     '/register',
+    '/user',
   ];
   return (
     <Router>
@@ -45,6 +48,8 @@ function InnerApp({ pathList }) {
             <Route path="/shop" element={<Shop />} />
             <Route path="/login" element={<LoginForm />} />
             <Route path="/register" element={<RegisterForm />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/user" element={<UserPage />} />
           </Routes>
         </main>
       </div>

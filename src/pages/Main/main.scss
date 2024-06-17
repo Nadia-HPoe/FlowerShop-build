@@ -133,7 +133,9 @@ hr {
 .flower__image {
   display: flex;
   align-self: center;
-  width: 251px;
+  border-radius: 5px;
+  max-width: auto;
+  max-height: 229px;
 }
 
 .flower__name {

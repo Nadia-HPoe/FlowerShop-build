@@ -1,0 +1,135 @@
+@use '../../assets/styles/var';
+
+.cart-container {
+  background-color: #f2f2f2;
+  padding: 2.4375rem 7.5rem 9.4375rem;
+  font-weight: 400;
+}
+.cart-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.cart-icon {
+  padding: 2.875rem 27.875rem 17.5625rem;
+}
+
+.cart-empty {
+  background-color: white;
+}
+
+.cart-full {
+  display: none;
+}
+.cart-list__text {
+  font-size: 20px;
+  line-height: 23px;
+  padding: 2rem 2.625rem 3rem;
+}
+.cart-list {
+  width: 65%;
+  border-radius: 5px;
+  background-color: white;
+  padding: 0 2.625rem 2.875rem;
+}
+.cart-list__card {
+  display: flex;
+  justify-content: space-between;
+}
+.cart-list__card-item {
+  display: flex;
+  align-items: center;
+  gap: 1.9375rem;
+}
+
+.cart-list__card-item_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2.5625rem;
+}
+.cart-list__card-item_name {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.cart-list__card-item_text,
+.cart-list__card-item_price {
+  font-size: 18px;
+  line-height: 21px;
+  color: var.$color-grey;
+}
+
+.cart-list__buttons {
+  border: 1px solid var.$color-orange;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  max-width: 4.4375rem;
+}
+.cart-list__button-less,
+.cart-list__button-more {
+  border: none;
+  background: none;
+  color: var.$color-orange;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 19px;
+  font-weight: bold;
+}
+
+.cart-list__amount-input {
+  font-size: 16px;
+  line-height: 19px;
+  width: 10%;
+  text-align: center;
+  border: none;
+  background: none;
+}
+.cart-list__card-utility {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: end;
+}
+.cart-list__delete-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.cart-list__card-total {
+  font-size: 20px;
+  line-height: 23px;
+}
+.cart-total {
+  max-height: 137px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 0 1rem 1.25rem;
+}
+.cart-total__text {
+  font-size: 20px;
+  line-height: 23px;
+  padding: 2rem 0.43rem 1.3125rem;
+  .cart-total__price {
+    font-weight: bold;
+    color: black;
+  }
+}
+
+.cart-total__button {
+  width: 100%;
+  background-color: var.$color-orange;
+  color: white;
+  border-radius: 5px;
+  border-color: transparent;
+  cursor: pointer;
+  transition: 0.3s all;
+  font-size: 18px;
+  line-height: 21px;
+  &:hover,
+  &:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
